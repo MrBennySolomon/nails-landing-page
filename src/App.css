@@ -15,6 +15,15 @@ body {
   background-color: #605E67;
 }
 
+label {
+  color: #E75480;
+}
+
+select {
+  padding: 1rem 5rem;
+  font-size: 1rem;
+}
+
 input {
   text-align: center;
   border: 2px solid white;
