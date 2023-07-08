@@ -15,11 +15,12 @@ body {
 
 input {
   text-align: center;
-  padding: 1.5rem 6rem;
   border: 2px solid white;
-  color: white;
+  color: black;
   font-size: 150%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .flex {
@@ -33,7 +34,7 @@ input {
 }
 
 .form {
-  width: 50vw;
+  width: 30vw;
   height: 70vh;
   /* border: 4px solid white; */
 
@@ -84,13 +85,14 @@ video {
 }
 
 button {
-  width: 50%;
+  width: 100%;
   height: 10%;
   background-color: rgba(0,0,0,0.5);
   border: 4px solid white;
   color: white;
   font-size: 150%;
   font-weight: bold;
+  border: 2px solid white;
 }
 
 .loader {
@@ -137,7 +139,12 @@ h1.thanks {
     width: 100vw;
   }
 
+  input {
+    width: 100%;
+  }
+
   button {
+    width: 100%;
     background-color: rgba(0,0,0,0.5)
   }
 }
