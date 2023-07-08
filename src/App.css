@@ -61,7 +61,7 @@ video {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  width: auto;
+  max-width: 100%;
   height: auto;
   z-index: 1;
   /* to change the blur effect edit the number below in your code*/
@@ -114,10 +114,11 @@ h1.thanks {
 }
 
 @media (max-width: 1524px) {
-  video {
+
+  /* video {
     width: auto;
     height: 100vh;
-  }
+  } */
 
   h1 {
     font-size: 200%;

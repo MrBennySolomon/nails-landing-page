@@ -1,19 +1,21 @@
 /* eslint-disable no-unused-vars */
-import './App.css'
-import { useState } from 'react';
-import nails from "./assets/nails-background.mp4";
+import "./App.css";
+import { useState } from "react";
+import nailsDesktop from "./assets/nails-background.mp4";
+import nailsMobile from "./assets/nails-background-mobile.mp4";
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [isShowingGreet, setIsShowingGreet] = useState(false);
-  
+
   const [greet, setIsGreet] = useState("תודה שנרשמתם");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
 
   const clickHandler = () => {
-    setIsLoading; (true);
-    
+    setIsLoading;
+    true;
+
     fetch("https://64a964958b9afaf4844aa1e7.mockapi.io/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -25,13 +27,26 @@ function App() {
       setIsLoading(false);
       setIsShowingGreet(true);
     });
-  }
+  };
 
   return (
     <div className="flex">
       <div className="video-overlay">
         <video autoPlay muted loop id="myVideo">
-          <source src={nails} type="video/mp4" />
+          <source
+            className="src-mobile"
+            src={nailsMobile}
+            type="video/mp4"
+            media="all and (max-width: 600px)"
+          />
+          <source
+            className="src-desktop"
+            src={nailsDesktop}
+            type="video/mp4"
+            media="all and (min-width: 601px)"
+          />
+          <source src={nailsMobile} type="video/mp4" />
+          <source src={nailsDesktop} type="video/mp4" />
         </video>
       </div>
       <h1>עוד קורס ציפורניים מטורף של מאסטר ניילס מתחיל</h1>
@@ -57,4 +72,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
