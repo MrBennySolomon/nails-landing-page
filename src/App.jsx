@@ -91,7 +91,7 @@ function App() {
             type="number"
             placeholder="טלפון"
           />
-          <button onClick={clickHandler}>אני רוצה להצטרף לקורס</button>
+          <button onClick={clickHandler}>אני רוצה להצטרף לחבילה</button>
         </div>
       )}
       {isLoading && <div className="loader"></div>}
