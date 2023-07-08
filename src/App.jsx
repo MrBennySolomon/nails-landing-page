@@ -114,6 +114,23 @@ function App() {
         {isShowingGreet && <h1 className="thanks">תודה שנרשמתם</h1>}
       </div>
       <div ref={flexImgRef} className="flex-img">
+        <div className="video-overlay">
+          <video autoPlay muted loop id="myVideo">
+            <source
+              className="src-mobile"
+              src={nailsMobile}
+              type="video/mp4"
+              media="(min-width: 250px) and (max-width: 600px)"
+            />
+
+            <source
+              className="src-desktop"
+              src={nailsDesktop}
+              type="video/mp4"
+              media="(min-width: 601px) and (max-width: 2000px)"
+            />
+          </video>
+        </div>
         <a onClick={detailsHandler}>חזור</a>
         <img src={details} width="100%" />
       </div>
