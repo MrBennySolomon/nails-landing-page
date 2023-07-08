@@ -117,8 +117,18 @@ h1.thanks {
     height: 100vh;
   }
 
+  h1 {
+    font-size: 200%;
+  }
+
+  input {
+    padding: 1rem 1rem;
+  }
+
   button {
-    background-color: rgba(0,0,0,0.5)
+    background-color: rgba(0,0,0,0.5);
+    font-size: 100%;
+    width: 170%;
   }
 }
 
