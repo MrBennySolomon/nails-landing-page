@@ -15,6 +15,21 @@ body {
   background-color: #605E67;
 }
 
+.none {
+  display: none !important; 
+}
+
+a {
+  text-decoration: underline;
+  color: cadetblue;
+}
+
+img {
+  width: 100vw;
+  height: 95vh;
+  opacity: 0.5;
+}
+
 label {
   color: #E75480;
 }
