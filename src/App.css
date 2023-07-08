@@ -93,6 +93,24 @@ button {
   font-weight: bold;
 }
 
+.loader {
+  border: 16px solid #E75480; /* Light grey */
+  border-top: 16px solid #FF99E3; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+h1.thanks {
+  color: #E75480;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 @media (max-width: 1524px) {
   video {
     width: auto;
