@@ -13,20 +13,21 @@ function App() {
   const [phone, setPhone] = useState("");
 
   const clickHandler = () => {
-    setIsLoading;
-    true;
+    if (name.length > 0 && phone.length >= 9) {
+      setIsLoading(true);
 
-    fetch("https://64a964958b9afaf4844aa1e7.mockapi.io/users", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: name,
-        phone: phone
-      })
-    }).then((value) => {
-      setIsLoading(false);
-      setIsShowingGreet(true);
-    });
+      fetch("https://64a964958b9afaf4844aa1e7.mockapi.io/users", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: name,
+          phone: phone
+        })
+      }).then((value) => {
+        setIsLoading(false);
+        setIsShowingGreet(true);
+      });
+    }
   };
 
   return (
@@ -47,7 +48,7 @@ function App() {
             type="video/mp4"
             media="(min-width: 601px) and (max-width: 2000px)"
           />
-          
+
         </video>
       </div>
       <h1>עוד קורס ציפורניים מטורף של מאסטר ניילס מתחיל</h1>
