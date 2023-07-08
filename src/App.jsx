@@ -33,23 +33,25 @@ function App() {
     <div className="flex">
       <div className="video-overlay">
         <video autoPlay muted loop id="myVideo">
+          
           <source
             className="src-mobile"
             src={nailsMobile}
             type="video/mp4"
-            media="all and (max-width: 600px)"
+            media="(min-width: 250px) and (max-width: 600px)"
           />
+
           <source
             className="src-desktop"
             src={nailsDesktop}
             type="video/mp4"
-            media="all and (min-width: 601px)"
+            media="(min-width: 601px) and (max-width: 2000px)"
           />
-          <source src={nailsMobile} type="video/mp4" />
-          <source src={nailsDesktop} type="video/mp4" />
+          
         </video>
       </div>
       <h1>עוד קורס ציפורניים מטורף של מאסטר ניילס מתחיל</h1>
+      <p></p>
       <h1>הרשמו עכשיו</h1>
       {!isLoading && !isShowingGreet && (
         <div className="form">
