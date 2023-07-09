@@ -145,7 +145,7 @@ function App() {
             />
           </video>
         </div>
-        <h1>הרשמו עכשיו למגוון קורסים של מאסטר ניילס</h1>
+        <h1>מאסטר ניילס חבילות קורסים ומוצרים</h1>
         <label htmlFor="pkg">בחרו חבילה</label>
 
         <select onChange={selectHandler} name="pkg" id="pkg">
